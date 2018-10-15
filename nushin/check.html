@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fj's Personal Server</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="server.png" type="image/png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<body style="background-color:AliceBlue;">
+	<center>
+	<div class="container">
+			<form action="upload.php" method="post" enctype="multipart/form-data">
+				<h1>Upload your photos</h1>
+				<input type="file" name="files[]" multiple="multiple" accept="image/*" required /><br><br>
+				<input type="submit" name="Submit" value="Upload" class="btn btn-primary btn-lg btn-block" /><br>
+				<input type="button" value="Refresh" class="btn btn-warning btn-lg btn-block" onclick="window.location.reload()"/><br><br>
+			</form>
+		</div>
+	</center>
+</body>
+</html>
